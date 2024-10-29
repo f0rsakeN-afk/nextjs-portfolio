@@ -1,0 +1,16 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "title": "Sflix",
+      "description": "SFlix is a web application that allows users to discover trending, playing now, and upcoming movies. Powered by TMDB API, SFlix provides a seamless movie browsing experience with detailed information about each movie.",
+      "previewURL": "https://sflix-ten.vercel.app/",
+      "codeURL": "https://github.com/f0rsakeN-afk/sflix",
+      "thumbnail": "/project-images/s1.png",
+      "labels": ["Reactjs","TailwindCSS","TMDB API"],
+      "category": "Frontend",
+      "isDone": true,
+      "isTeam": false
+    }
+  ]
+}
