@@ -28,7 +28,8 @@ export const Intro = () => {
         transition={{ type: 'spring', delay: 1 }}
         className="mb-2 text-4xl lg:text-5xl text-center md:text-left font-mono"
       >
-        Hello 🙂 <br />
+        Hello 😊
+        <br />
         I'm <span className="text-purple-500">Naresh Rajbanshi</span> a MERN
         Developer from Biratnagar, Nepal.
       </motion.h2>

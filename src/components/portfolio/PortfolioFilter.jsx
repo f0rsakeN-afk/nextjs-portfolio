@@ -2,15 +2,18 @@
 
 import { motion } from 'framer-motion';
 
-export const PortfolioFilter = ({ categories, selectedCategory, setSelectedCategory }) => {
-
+export const PortfolioFilter = ({
+  categories,
+  selectedCategory,
+  setSelectedCategory,
+}) => {
   // Handle category filter
   const handleFilter = (category) => {
     setSelectedCategory(category);
   };
 
   return (
-    <div className="space-x-3">
+    <div className="flex flex-wrap gap-2 sm:gap-3 md:space-x-3 justify-center md:justify-start">
       {categories.map((item, index) => {
         const selected = selectedCategory === item;
         return (
@@ -18,7 +21,7 @@ export const PortfolioFilter = ({ categories, selectedCategory, setSelectedCateg
             href="#portfolio"
             key={index}
             onClick={() => handleFilter(item)}
-            className="px-4 py-1 rounded-full capitalize relative bg-purple-200 hover:bg-purple-300 text-purple-800 text-sm transition-all"
+            className="px-3 sm:px-4 py-1 rounded-full capitalize relative bg-purple-200 hover:bg-purple-300 text-purple-800 text-xs sm:text-sm md:text-base transition-all"
           >
             <span
               className={[selected && 'text-purple-200', 'relative z-[2]'].join(
@@ -27,7 +30,6 @@ export const PortfolioFilter = ({ categories, selectedCategory, setSelectedCateg
             >
               {item === null ? 'all' : item}
             </span>
-
             {selected && (
               <motion.span
                 layoutId="tab"

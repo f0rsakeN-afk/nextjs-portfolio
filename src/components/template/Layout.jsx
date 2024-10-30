@@ -10,13 +10,6 @@ export const Layout = ({ children }) => {
   const currentPath = usePathname();
   const { theme } = useBgTheme();
 
-  if (
-    currentPath.startsWith('/landing-page') ||
-    currentPath.startsWith('/ui/mail')
-  ) {
-    return <>{children}</>;
-  }
-
   if (currentPath === '/') {
     return (
       <div className="flex flex-col justify-between min-h-screen">
