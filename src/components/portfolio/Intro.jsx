@@ -21,23 +21,23 @@ const contact = [
 
 export const Intro = () => {
   return (
-    <div className="mt-10 mb-6 max-w-3xl  pb-10 text-center md:text-right-left leading-6">
+    <div className="mt-10 mb-6 max-w-3xl ml-auto pb-10 text-center md:text-right leading-6">
       <motion.h2
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', delay: 1 }}
-        className="mb-2 text-4xl lg:text-5xl text-center md:text-left font-mono"
+        className="mb-2 text-4xl lg:text-5xl text-center md:text-right font-mono"
       >
         Hello 😊
         <br />
-        I'm <span className="text-purple-500">Naresh Rajbanshi</span> a MERN
-        Developer from Biratnagar, Nepal.
+        I'm <span className="text-purple-500">Naresh </span> a MERN Developer
+        from Nepal.
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', delay: 1.5, stiffness: 500 }}
-        className="text-gray-500 dark:text-gray-400 text-center md:text-left leading-7"
+        className="text-gray-500 dark:text-gray-400 text-center md:text-right leading-7"
       >
         Computer Engineering student mastering the MERN stack (React, Node.js,
         Express, MongoDB). Eager to apply my technical skills to build
@@ -70,7 +70,7 @@ export const Intro = () => {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', delay: 2.5, stiffness: 500 }}
-        className="flex justify-center md:justify-start gap-4 items-center mt-4"
+        className="flex justify-center md:justify-end gap-4 items-center mt-4"
       >
         {contact.map(({ title, url, icon: Icon, email }, i) => (
           <LinkIcon key={i} {...{ title, url, Icon, email }} />

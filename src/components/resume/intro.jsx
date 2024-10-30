@@ -6,7 +6,7 @@ import { LinkIcon } from './ui/linkIcon';
 
 export const Intro = ({ data }) => {
   return (
-    <section className="flex gap-4 justify-between items-center">
+    <section className="flex  gap-4 justify-between items-center">
       <div className="pr-0 sm:pr-10 md:pr-20">
         <h1 className="title  ">{data.name}</h1>
         <p className="font-mono dark:text-gray-100">{data.about}</p>
