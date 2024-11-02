@@ -7,7 +7,19 @@
       "previewURL": "https://sflix-ten.vercel.app/",
       "codeURL": "https://github.com/f0rsakeN-afk/sflix",
       "thumbnail": "/project-images/s1.png",
-      "labels": ["Reactjs","TailwindCSS","TMDB API"],
+      "labels": ["Reactjs", "TailwindCSS", "TMDB API"],
+      "category": "Frontend",
+      "isDone": true,
+      "isTeam": false
+    },
+    {
+      "id": 2,
+      "title": "Rivermate",
+      "description": "RiverMate is a comprehensive HR platform designed for global teams, built with React and Tailwind CSS.",
+      "previewURL": "https://rivermate-nar3sh-dotcom.vercel.app/",
+      "codeURL": "https://github.com/f0rsakeN-afk/Rivermate",
+      "thumbnail": "/project-images/s2.png",
+      "labels": ["Reactjs", "TailwindCSS", "AOS"],
       "category": "Frontend",
       "isDone": true,
       "isTeam": false
